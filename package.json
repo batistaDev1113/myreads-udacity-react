@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "inline-style-prefixer": "^4.0.2",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-modal-dialog": "^4.0.7",
+    "react-router-dom": "^4.3.1",
+    "homepage": "https://batistadev1113.github.io/myreads-udacity-react"
+  },
+  "devDependencies": {
+    "react-scripts": "^2.1.0"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "build-js": "react-scripts build",
+    "build": "npm run build-css && npm run build-js",
+    "start-css": "npm run build-css && npm run build-css -- --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
